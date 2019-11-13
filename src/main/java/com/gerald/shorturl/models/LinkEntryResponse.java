@@ -1,22 +1,22 @@
 package com.gerald.shorturl.models;
 
 public class LinkEntryResponse {
-    private String shortUrlKey;
+    private String shortUrl;
 
     public LinkEntryResponse(){
 
     }
 
-    private LinkEntryResponse(String shortUrlKey){
-        this.shortUrlKey = shortUrlKey;
+    private LinkEntryResponse(String shortUrl){
+        this.shortUrl = shortUrl;
     }
 
-    public String getShortUrlKey() {
-        return shortUrlKey;
+    public String getShortUrl() {
+        return shortUrl;
     }
 
-    public void setShortUrlKey(String shortUrlKey) {
-        this.shortUrlKey = shortUrlKey;
+    public void setShortUrl(String shortUrl) {
+        this.shortUrl = shortUrl;
     }
 
     public static LinkEntryResponse of(String shortUrlKey){
