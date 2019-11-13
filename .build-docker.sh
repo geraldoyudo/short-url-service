@@ -1,0 +1,1 @@
+docker build -t geraldoyudo/short-url-service:0.0.1-SNAPSHOT .

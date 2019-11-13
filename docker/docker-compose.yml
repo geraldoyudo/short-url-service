@@ -1,0 +1,16 @@
+version: '2'
+services:
+  short-url-service:
+    image: geraldoyudo/short-url-service:0.0.1-SNAPSHOT
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - BASE_URL=http://localhost:9095
+    ports:
+      - "9095:8080"
+    depends_on:
+      - redis
+  redis:
+    image: redis:5.0.6-alpine
+    ports:
+      - "6379:6379"
